@@ -10,6 +10,8 @@ public class GallaryItem {
     private String mId;
     private String mUrl;
     private String mOwner;
+    private double mLat;
+    private double mLon;
 
     @Override
     public String toString(){
@@ -46,6 +48,22 @@ public class GallaryItem {
 
     public void setOwner(String mOwner) {
         this.mOwner = mOwner;
+    }
+
+    public double getLat() {
+        return mLat;
+    }
+
+    public void setLat(double mLat) {
+        this.mLat = mLat;
+    }
+
+    public double getLon() {
+        return mLon;
+    }
+
+    public void setLon(double mLon) {
+        this.mLon = mLon;
     }
 
     public Uri getPhotoPageUri(){
